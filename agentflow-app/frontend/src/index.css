@@ -113,3 +113,112 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #333;
 }
+
+/* Scroll Reveal Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* Clip-path reveal for professional text vibe */
+.clip-reveal {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.clip-reveal-text {
+  display: block;
+  transform: translateY(110%);
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.visible .clip-reveal-text {
+  transform: translateY(0);
+}
+
+.visible .clip-reveal-delay-1 { transition-delay: 0.1s; }
+.visible .clip-reveal-delay-2 { transition-delay: 0.2s; }
+
+/* Solid Black Tech Cards */
+.card-solid-black {
+  background: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.8), 0 0 20px rgba(255,255,255,0.02);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.5s ease;
+}
+
+.card-solid-black:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px) scale(1.01);
+}
+
+/* Border Pulse Animation */
+.animate-border-pulse {
+  animation: borderPulse 4s ease-in-out infinite;
+}
+
+@keyframes borderPulse {
+  0%, 100% { border-color: rgba(255, 255, 255, 0.1); box-shadow: 0 0 0px rgba(255,255,255,0); }
+  50% { border-color: rgba(255, 255, 255, 0.3); box-shadow: 0 0 20px rgba(255,255,255,0.05); }
+}
+
+/* Typing/Scanning effect for text inside cards */
+.typing-line {
+  display: block;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(40, end) forwards;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Premium Orange Mesh Background for Video Section */
+.orange-mesh-bg {
+  background-color: #050505;
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(24,100%,10%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(28,100%,15%,1) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, hsla(22,100%,12%,1) 0, transparent 50%),
+    radial-gradient(at 50% 100%, hsla(32,100%,8%,1) 0, transparent 50%);
+  position: relative;
+}
+
+.orange-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background: radial-gradient(circle, rgba(255, 120, 40, 0.15) 0%, transparent 70%);
+  filter: blur(100px);
+  pointer-events: none;
+}
+
+/* Comparison Grid Styles */
+.comparison-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.comparison-card.highlight {
+  background: linear-gradient(180deg, rgba(18, 184, 129, 0.05) 0%, rgba(18, 184, 129, 0.01) 100%);
+  border-color: rgba(18, 184, 129, 0.2);
+  box-shadow: 0 0 30px rgba(18, 184, 129, 0.05);
+}
