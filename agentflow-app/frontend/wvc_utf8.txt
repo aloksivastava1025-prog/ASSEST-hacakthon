@@ -1,0 +1,436 @@
+﻿import { useState } from 'react';
+import type { CSSProperties } from 'react';
+import {
+  ArrowRight,
+  Download,
+  Code,
+  Eye,
+  Bot,
+  User,
+  Cpu,
+  Zap,
+  BrainCircuit,
+  BriefcaseBusiness,
+  Sparkles,
+} from 'lucide-react';
+import type { ProviderInfo, WorkflowEdge, WorkflowGraph, WorkflowNode } from '../types';
+
+interface Props {
+  workflow: WorkflowGraph;
+  agentId: string;
+  agentName: string;
+  agentScript: string;
+  providerInfo: ProviderInfo;
+  onContinue: () => void;
+}
+
+interface PositionedNode extends WorkflowNode {
+  x: number;
+  y: number;
+  side: 'left' | 'right' | 'center';
+}
+
+function selectHubNode(nodes: WorkflowNode[], edges: WorkflowEdge[]): WorkflowNode {
+  const explicitHub = nodes.find((node) => node.kind === 'hub');
+  if (explicitHub) return explicitHub;
+  if (!edges.length) return nodes[0];
+
+  const scores = new Map<string, number>();
+  edges.forEach((edge) => {
+    scores.set(edge.source, (scores.get(edge.source) || 0) + 1);
+    scores.set(edge.target, (scores.get(edge.target) || 0) + 1);
+  });
+
+  return nodes.reduce((best, node) => {
+    const nodeScore = scores.get(node.id) || 0;
+    const bestScore = scores.get(best.id) || 0;
+    return nodeScore > bestScore ? node : best;
+  }, nodes[0]);
+}
+
+function laneYPositions(count: number) {
+  if (count <= 1) return [50];
+  return Array.from({ length: count }, (_, index) => 20 + (index * 60) / (count - 1));
+}
+
+function sortLaneNodes(nodes: WorkflowNode[]) {
+  const priority: Record<string, number> = {
+    provider: 0,
+    context: 1,
+    input: 2,
+    agent: 3,
+    output: 4,
+  };
+
+  return [...nodes].sort((left, right) => {
+    const leftPriority = priority[left.kind || 'output'] ?? 10;
+    const rightPriority = priority[right.kind || 'output'] ?? 10;
+    if (leftPriority !== rightPriority) return leftPriority - rightPriority;
+    return left.data.label.localeCompare(right.data.label);
+  });
+}
+
+function positionNodes(workflow: WorkflowGraph): PositionedNode[] {
+  if (!workflow.nodes.length) return [];
+
+  const hubNode = selectHubNode(workflow.nodes, workflow.edges);
+  const remainingNodes = workflow.nodes.filter((node) => node.id !== hubNode.id);
+
+  const leftNodes = sortLaneNodes(
+    remainingNodes.filter((node, index) => {
+      const incomingToHub = workflow.edges.some((edge) => edge.source === node.id && edge.target === hubNode.id);
+      const outgoingFromHub = workflow.edges.some((edge) => edge.source === hubNode.id && edge.target === node.id);
+
+      if (incomingToHub && !outgoingFromHub) return true;
+      if (outgoingFromHub && !incomingToHub) return false;
+      if (node.kind === 'provider' || node.kind === 'context' || node.kind === 'input') return true;
+      if (node.kind === 'agent' || node.kind === 'output') return false;
+      return index % 2 === 0;
+    }),
+  );
+
+  const rightNodes = sortLaneNodes(
+    remainingNodes.filter((node) => !leftNodes.some((candidate) => candidate.id === node.id)),
+  );
+
+  const leftY = laneYPositions(leftNodes.length);
+  const rightY = laneYPositions(rightNodes.length);
+
+  return [
+    ...leftNodes.map((node, index) => ({ ...node, x: 19, y: leftY[index], side: 'left' as const })),
+    { ...hubNode, x: 50, y: 50, side: 'center' as const },
+    ...rightNodes.map((node, index) => ({ ...node, x: 81, y: rightY[index], side: 'right' as const })),
+  ];
+}
+
+function edgePath(source: PositionedNode, target: PositionedNode) {
+  const deltaX = target.x - source.x;
+  const controlOffset = deltaX * 0.42;
+  return `M ${source.x} ${source.y} C ${source.x + controlOffset} ${source.y}, ${target.x - controlOffset} ${target.y}, ${target.x} ${target.y}`;
+}
+
+function resolveNodeIcon(node: WorkflowNode) {
+  switch (node.data.icon || node.kind) {
+    case 'user':
+    case 'input':
+      return User;
+    case 'cpu':
+    case 'provider':
+      return Cpu;
+    case 'briefcase':
+    case 'context':
+      return BriefcaseBusiness;
+    case 'brain':
+      return BrainCircuit;
+    case 'sparkles':
+    case 'output':
+      return Sparkles;
+    case 'bot':
+    case 'hub':
+    case 'agent':
+      return Bot;
+    default:
+      return Bot;
+  }
+}
+
+function nodePalette(node: WorkflowNode, providerInfo: ProviderInfo) {
+  const providerLabel = `${providerInfo.provider} ${providerInfo.model}`.toLowerCase();
+  const isActiveProvider = node.kind === 'provider' && providerLabel.includes(node.data.label.toLowerCase());
+
+  if (node.kind === 'provider' || isActiveProvider) {
+    return {
+      background: 'rgba(255,107,53,0.12)',
+      border: 'rgba(255,107,53,0.35)',
+      glow: '0 20px 40px rgba(255,107,53,0.16)',
+      accent: 'var(--orange)',
+    };
+  }
+
+  if (node.kind === 'context') {
+    return {
+      background: 'rgba(168,85,247,0.12)',
+      border: 'rgba(168,85,247,0.32)',
+      glow: '0 18px 34px rgba(168,85,247,0.14)',
+      accent: 'var(--purple)',
+    };
+  }
+
+  if (node.kind === 'input') {
+    return {
+      background: 'rgba(255,255,255,0.05)',
+      border: 'rgba(255,255,255,0.12)',
+      glow: '0 18px 32px rgba(15,23,42,0.28)',
+      accent: '#f8fafc',
+    };
+  }
+
+  if (node.kind === 'agent' || node.kind === 'output') {
+    return {
+      background: 'rgba(232,67,147,0.08)',
+      border: 'rgba(232,67,147,0.22)',
+      glow: '0 18px 34px rgba(232,67,147,0.16)',
+      accent: 'var(--pink)',
+    };
+  }
+
+  return {
+    background: 'rgba(232,67,147,0.14)',
+    border: 'rgba(232,67,147,0.30)',
+    glow: '0 24px 60px rgba(232,67,147,0.18)',
+    accent: 'var(--pink)',
+  };
+}
+
+function fallbackWorkflow(agentName: string, providerInfo: ProviderInfo): WorkflowGraph {
+  return {
+    nodes: [
+      { id: 'customer', kind: 'input', data: { label: 'Customer Chat', sublabel: 'UserProxyAgent', icon: 'user' } },
+      { id: 'assistant', kind: 'hub', data: { label: agentName, sublabel: 'AssistantAgent', icon: 'bot' } },
+      { id: 'provider', kind: 'provider', data: { label: providerInfo.model || 'LLM Node', sublabel: providerInfo.provider || 'Provider', icon: 'cpu' } },
+    ],
+    edges: [
+      { id: 'customer-assistant', source: 'customer', target: 'assistant', animated: true },
+      { id: 'provider-assistant', source: 'provider', target: 'assistant', animated: true, style: { strokeDasharray: '6 4' } },
+    ],
+  };
+}
+
+function WorkflowGraphView({ workflow, agentName, providerInfo }: { workflow: WorkflowGraph; agentName: string; providerInfo: ProviderInfo }) {
+  const resolvedWorkflow = workflow.nodes.length ? workflow : fallbackWorkflow(agentName, providerInfo);
+  const positionedNodes = positionNodes(resolvedWorkflow);
+  const nodeMap = new Map(positionedNodes.map((node) => [node.id, node]));
+  const hubNode = positionedNodes.find((node) => node.side === 'center');
+
+  return (
+    <div style={{ position: 'relative', width: '100%', height: 'clamp(360px, 58vw, 440px)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none' }}>
+        <defs>
+          <linearGradient id="workflow-link" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="rgba(255,107,53,0.88)" />
+            <stop offset="55%" stopColor="rgba(232,67,147,0.80)" />
+            <stop offset="100%" stopColor="rgba(168,85,247,0.82)" />
+          </linearGradient>
+          <radialGradient id="workflow-hub" cx="50%" cy="50%" r="70%">
+            <stop offset="0%" stopColor="rgba(255,255,255,0.18)" />
+            <stop offset="100%" stopColor="rgba(18,18,24,0.96)" />
+          </radialGradient>
+        </defs>
+
+        <circle cx="50" cy="50" r="30" fill="rgba(232,67,147,0.06)" />
+
+        {resolvedWorkflow.edges.map((edge, index) => {
+          const source = nodeMap.get(edge.source);
+          const target = nodeMap.get(edge.target);
+          if (!source || !target) return null;
+
+          const path = edgePath(source, target);
+          const dashArray = typeof edge.style?.strokeDasharray === 'string'
+            ? edge.style.strokeDasharray
+            : (source.kind === 'provider' || source.kind === 'context' ? '5 4' : undefined);
+          const opacity = typeof edge.style?.opacity === 'number' ? edge.style.opacity : 0.84;
+
+          return (
+            <g key={edge.id}>
+              <path
+                d={path}
+                fill="none"
+                stroke="url(#workflow-link)"
+                strokeWidth={source.side === 'center' || target.side === 'center' ? 0.85 : 0.65}
+                strokeDasharray={dashArray}
+                opacity={opacity}
+                strokeLinecap="round"
+              >
+                <animate attributeName="opacity" values={`${opacity * 0.55};${opacity};${opacity * 0.55}`} dur="3s" begin={`${index * 0.22}s`} repeatCount="indefinite" />
+              </path>
+              {edge.animated && (
+                <circle r="0.55" fill={source.kind === 'provider' ? 'var(--orange)' : 'var(--pink)'}>
+                  <animateMotion dur="2.4s" begin={`${index * 0.18}s`} repeatCount="indefinite" path={path} />
+                </circle>
+              )}
+            </g>
+          );
+        })}
+
+        <circle cx="50" cy="50" r="11.5" fill="url(#workflow-hub)" stroke="rgba(255,255,255,0.12)" strokeWidth="0.45" />
+      </svg>
+
+      {positionedNodes.map((node) => {
+        const Icon = resolveNodeIcon(node);
+        const palette = nodePalette(node, providerInfo);
+
+        if (node.side === 'center') {
+          return (
+            <div key={node.id} style={{ position: 'absolute', left: `${node.x}%`, top: `${node.y}%`, transform: 'translate(-50%, -50%)', zIndex: 2 }}>
+              <div
+                style={{
+                  width: 120,
+                  height: 120,
+                  borderRadius: '50%',
+                  display: 'grid',
+                  placeItems: 'center',
+                  background: 'radial-gradient(circle at top, rgba(255,255,255,0.12), rgba(18,18,24,0.98) 60%)',
+                  border: '1px solid rgba(255,255,255,0.12)',
+                  boxShadow: '0 28px 80px rgba(232,67,147,0.22), 0 0 0 12px rgba(255,255,255,0.02)',
+                }}
+              >
+                <div
+                  style={{
+                    width: 74,
+                    height: 74,
+                    borderRadius: '50%',
+                    display: 'grid',
+                    placeItems: 'center',
+                    background: 'linear-gradient(145deg, rgba(255,107,53,0.20), rgba(232,67,147,0.28), rgba(168,85,247,0.20))',
+                    border: '1px solid rgba(255,255,255,0.14)',
+                  }}
+                >
+                  <Zap size={30} style={{ color: 'white' }} />
+                </div>
+              </div>
+              <div style={{ textAlign: 'center', marginTop: 16 }}>
+                <p style={{ margin: 0, fontSize: 14, fontWeight: 700, color: 'white' }}>{node.data.label || agentName}</p>
+                <p style={{ margin: '4px 0 0', fontSize: 11, color: 'var(--text-muted)', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+                  {node.data.sublabel || 'AutoGen Hub'}
+                </p>
+              </div>
+            </div>
+          );
+        }
+
+        const cardStyle: CSSProperties = {
+          position: 'absolute',
+          left: `${node.x}%`,
+          top: `${node.y}%`,
+          transform: 'translate(-50%, -50%)',
+          width: 'clamp(148px, 18vw, 188px)',
+          padding: '14px 16px',
+          borderRadius: 16,
+          background: palette.background,
+          border: `1px solid ${palette.border}`,
+          boxShadow: palette.glow,
+          backdropFilter: 'blur(16px)',
+          zIndex: 2,
+        };
+
+        return (
+          <div key={node.id} style={cardStyle}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+              <div
+                style={{
+                  width: 36,
+                  height: 36,
+                  borderRadius: 12,
+                  display: 'grid',
+                  placeItems: 'center',
+                  background: 'rgba(255,255,255,0.06)',
+                  border: '1px solid rgba(255,255,255,0.08)',
+                  color: palette.accent,
+                  flexShrink: 0,
+                }}
+              >
+                <Icon size={16} />
+              </div>
+              <div style={{ minWidth: 0 }}>
+                <p style={{ margin: 0, fontSize: 13, fontWeight: 700, color: 'white' }}>{node.data.label}</p>
+                <p style={{ margin: '2px 0 0', fontSize: 11, color: 'var(--text-muted)', lineHeight: 1.4 }}>{node.data.sublabel}</p>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+
+      {hubNode && (
+        <div style={{ position: 'absolute', inset: 'auto 0 14px 0', display: 'flex', justifyContent: 'center', pointerEvents: 'none' }}>
+          <div
+            style={{
+              padding: '8px 14px',
+              borderRadius: 999,
+              background: 'rgba(255,255,255,0.04)',
+              border: '1px solid rgba(255,255,255,0.08)',
+              fontSize: 12,
+              color: 'var(--text-muted)',
+              letterSpacing: '0.04em',
+            }}
+          >
+            {resolvedWorkflow.nodes.length} nodes · {resolvedWorkflow.edges.length} edges · {hubNode.data.label}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default function WorkflowVisualizer({ workflow, agentId, agentName, agentScript, providerInfo, onContinue }: Props) {
+  const [showCode, setShowCode] = useState(false);
+
+  return (
+    <div className="page-container animate-fade-in" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', maxWidth: 1100, paddingTop: 40, paddingBottom: 40 }}>
+      <div className="orb orb-purple" style={{ width: 400, height: 400, top: -100, right: -100, position: 'fixed' }} />
+
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 24, flexWrap: 'wrap', gap: 16, zIndex: 1, position: 'relative' }}>
+        <div>
+          <h2 style={{ fontSize: 26, fontWeight: 800, marginBottom: 4 }}>
+            Agent Compiled: <span className="text-gradient">{agentName}</span>
+          </h2>
+          <p className="text-muted" style={{ fontSize: 14 }}>
+            Powered by <strong style={{ color: 'var(--pink)' }}>{providerInfo.model}</strong> via {providerInfo.provider}
+          </p>
+        </div>
+        <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+          <button className="secondary-btn" onClick={() => setShowCode(!showCode)}>
+            {showCode ? <Eye size={14} /> : <Code size={14} />} {showCode ? 'Graph' : 'Code'}
+          </button>
+          <button className="secondary-btn" onClick={() => window.open(`/api/agents/${agentId}/download`, '_blank')}>
+            <Download size={14} /> Download .py
+          </button>
+          <button className="glow-btn" onClick={onContinue} style={{ padding: '10px 24px', fontSize: 14 }}>
+            Test in Sandbox <ArrowRight size={16} />
+          </button>
+        </div>
+      </div>
+
+      <div className="glass-panel" style={{ flex: 1, overflow: 'hidden', display: 'flex', flexDirection: 'column', position: 'relative', zIndex: 1 }}>
+        {showCode ? (
+          <>
+            <div style={{ padding: '14px 24px', borderBottom: '1px solid var(--glass-border)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <span style={{ fontFamily: 'monospace', fontSize: 13, color: 'var(--pink)' }}>
+                {agentName.replace(/\s/g, '_').toLowerCase()}_agent.py
+              </span>
+              <span className="text-muted" style={{ fontSize: 12 }}>Standalone | Portable | Ready to Deploy</span>
+            </div>
+            <pre
+              style={{
+                flex: 1,
+                overflowY: 'auto',
+                padding: 24,
+                margin: 0,
+                background: 'rgba(0,0,0,0.4)',
+                color: '#e2e8f0',
+                fontSize: 13,
+                lineHeight: 1.7,
+                fontFamily: "'JetBrains Mono', monospace",
+                whiteSpace: 'pre-wrap',
+                wordBreak: 'break-word',
+              }}
+            >
+              {agentScript || '# Agent script will appear after compilation...'}
+            </pre>
+          </>
+        ) : (
+          <div style={{ flex: 1, padding: 24, background: 'rgba(0,0,0,0.3)' }}>
+            <WorkflowGraphView workflow={workflow} agentName={agentName} providerInfo={providerInfo} />
+          </div>
+        )}
+      </div>
+
+      <div style={{ marginTop: 16, background: 'rgba(232,67,147,0.05)', border: '1px solid rgba(232,67,147,0.15)', borderRadius: 12, padding: '14px 20px', position: 'relative', zIndex: 1 }}>
+        <p style={{ fontSize: 13, color: 'var(--text-muted)', margin: 0 }}>
+          <strong style={{ color: 'white' }}>Deploy anywhere:</strong>{' '}
+          <code style={{ color: 'var(--pink)' }}>pip install pyautogen</code> -&gt;{' '}
+          <code style={{ color: 'var(--pink)' }}>python {agentName.replace(/\s/g, '_').toLowerCase()}_agent.py</code>
+        </p>
+      </div>
+    </div>
+  );
+}

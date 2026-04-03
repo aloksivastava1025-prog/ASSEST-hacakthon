@@ -1,0 +1,856 @@
+2026-04-03 03:21:21,064 | INFO     | research_crew.main | ======================================================================
+2026-04-03 03:21:21,064 | INFO     | research_crew.main | Starting research pipeline for topic: test
+2026-04-03 03:21:21,068 | INFO     | research_crew.main | ======================================================================
+2026-04-03 03:21:21,068 | INFO     | research_crew.main | Using LLM: gpt-4o  temperature=0.3
+2026-04-03 03:21:24,064 | INFO     | research_crew.main | [1/5] Initialising Planner Agent …
+2026-04-03 03:21:24,064 | INFO     | research_crew.agents.planner_agent | Initialising Planner Agent.
+2026-04-03 03:21:24,068 | INFO     | research_crew.main | [2/5] Initialising Search Agent …
+2026-04-03 03:21:24,068 | INFO     | research_crew.agents.search_agent | Initialising Search Agent.
+2026-04-03 03:21:24,072 | INFO     | research_crew.main | [3/5] Initialising Validator Agent …
+2026-04-03 03:21:24,073 | INFO     | research_crew.agents.validator_agent | Initialising Source Validator Agent.
+2026-04-03 03:21:24,073 | INFO     | research_crew.main | [4/5] Initialising Extractor Agent …
+2026-04-03 03:21:24,073 | INFO     | research_crew.agents.extractor_agent | Initialising Evidence Extraction Agent.
+2026-04-03 03:21:24,073 | INFO     | research_crew.main | [5/5] Initialising Synthesizer Agent …
+2026-04-03 03:21:24,073 | INFO     | research_crew.agents.synthesizer_agent | Initialising Research Synthesizer Agent.
+2026-04-03 03:21:24,073 | INFO     | research_crew.main | Building task pipeline …
+2026-04-03 03:21:24,122 | INFO     | research_crew.main | Kicking off CrewAI pipeline …
+2026-04-03 03:21:26,960 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-03 03:21:26,962 | ERROR    | root | OpenAI API call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: dummy. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2026-04-03 03:21:26,963 | ERROR    | root | OpenAI API call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: dummy. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2026-04-03 03:21:27,276 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-03 03:21:27,289 | ERROR    | root | OpenAI API call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: dummy. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2026-04-03 03:21:27,289 | ERROR    | root | OpenAI API call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: dummy. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2026-04-03 03:21:27,610 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-03 03:21:27,612 | ERROR    | root | OpenAI API call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: dummy. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2026-04-03 03:21:27,613 | ERROR    | root | OpenAI API call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: dummy. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2026-04-03 03:21:27,970 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-03 03:21:27,972 | ERROR    | root | OpenAI API call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: dummy. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2026-04-03 03:21:27,973 | ERROR    | root | OpenAI API call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: dummy. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2026-04-03 03:30:48,732 | INFO     | research_crew.main | ======================================================================
+2026-04-03 03:30:48,737 | INFO     | research_crew.main | Starting research pipeline for topic: Achari is in the Food vertical, generating pre-revenue targeting: . The "Taste of Home" Seekers
+This is often the largest segment for traditional, handmade, or regional pickle brands.
+
+Demographics: Students living in hostels, young working professionals (22–35) living away from their hometowns, and the Indian diaspora abroad.
+
+Pain Point: Bland mess food or the inability to recreate grandmother’s recipes.
+
+What they want: Authentic, regional flavors (e.g., Avakaya from Andhra, Bedmi from UP, or North Indian Mango pickle) that taste "homemade" rather than factory-produced.
+
+2. The Time-Starved "Meal Enhancers"
+People who cook basic meals but want an instant flavor upgrade.
+
+Demographics: Dual-income households, busy parents (30–50), and bachelors.
+
+Pain Point: Lack of time to cook elaborate side dishes or chutneys.
+
+What they want: Consistency and convenience. They look for versatile pickles that pair well with anything from parathas to dal-chawal or even sandwiches.
+
+3. The Health-Conscious & Clean-Label Consumers
+A rapidly growing niche looking for "guilt-free" indulgence.
+
+Demographics: Fitness enthusiasts and health-aware families.
+
+Pain Point: High sodium, low-quality oils (palm oil), and artificial preservatives in mass-market brands.
+
+What they want: Pickles made with cold-pressed oils (mustard or sesame), rock salt (Saindhav), no added sugar, and zero synthetic preservatives. Sun-dried options are a huge plus.
+
+4. The Gourmet & Adventurous Foodies
+Consumers looking for unique culinary experiences.
+
+Demographics: Urban foodies (25–45) who shop at premium grocery stores or organic markets.
+
+Pain Point: Boredom with the standard "Mango/Lime/Chilli" trio.
+
+What they want: Exotic or non-traditional variants. Think Meat Pickles (Prawn/Chicken), Garlic-Stuffed Chillies, Bamboo Shoot, or even fusion flavors like Cranberry or Jalapeño pickles..
+2026-04-03 03:30:48,738 | INFO     | research_crew.main | ======================================================================
+2026-04-03 03:30:48,738 | INFO     | research_crew.main | Using LLM: gpt-4o  temperature=0.3
+2026-04-03 03:30:50,973 | INFO     | research_crew.main | [1/5] Initialising Planner Agent …
+2026-04-03 03:30:50,973 | INFO     | research_crew.agents.planner_agent | Initialising Planner Agent.
+2026-04-03 03:30:50,982 | INFO     | research_crew.main | [2/5] Initialising Search Agent …
+2026-04-03 03:30:50,982 | INFO     | research_crew.agents.search_agent | Initialising Search Agent.
+2026-04-03 03:30:50,989 | INFO     | research_crew.main | [3/5] Initialising Validator Agent …
+2026-04-03 03:30:50,989 | INFO     | research_crew.agents.validator_agent | Initialising Source Validator Agent.
+2026-04-03 03:30:50,991 | INFO     | research_crew.main | [4/5] Initialising Extractor Agent …
+2026-04-03 03:30:50,991 | INFO     | research_crew.agents.extractor_agent | Initialising Evidence Extraction Agent.
+2026-04-03 03:30:50,993 | INFO     | research_crew.main | [5/5] Initialising Synthesizer Agent …
+2026-04-03 03:30:50,994 | INFO     | research_crew.agents.synthesizer_agent | Initialising Research Synthesizer Agent.
+2026-04-03 03:30:50,995 | INFO     | research_crew.main | Building task pipeline …
+2026-04-03 03:30:51,060 | INFO     | research_crew.main | Kicking off CrewAI pipeline …
+2026-04-03 03:30:54,160 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:30:54,180 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.480722 seconds
+2026-04-03 03:30:55,482 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:30:55,497 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.827773 seconds
+2026-04-03 03:30:56,640 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:30:56,644 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:30:56,644 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:30:57,418 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:30:57,420 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.403036 seconds
+2026-04-03 03:30:58,556 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:30:58,556 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.811457 seconds
+2026-04-03 03:30:59,665 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:30:59,668 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:30:59,668 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:31:00,564 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:31:00,567 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.463790 seconds
+2026-04-03 03:31:01,329 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:31:01,331 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.783898 seconds
+2026-04-03 03:31:02,915 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:31:02,918 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:31:02,918 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:31:03,710 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:31:03,718 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.379940 seconds
+2026-04-03 03:31:04,414 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:31:04,414 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.977476 seconds
+2026-04-03 03:31:05,845 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:31:05,847 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:31:05,847 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:33:07,213 | INFO     | research_crew.main | ======================================================================
+2026-04-03 03:33:07,214 | INFO     | research_crew.main | Starting research pipeline for topic: Achari is in the Food vertical, generating pre-revenue targeting: . The "Taste of Home" Seekers
+This is often the largest segment for traditional, handmade, or regional pickle brands.
+
+Demographics: Students living in hostels, young working professionals (22–35) living away from their hometowns, and the Indian diaspora abroad.
+
+Pain Point: Bland mess food or the inability to recreate grandmother’s recipes.
+
+What they want: Authentic, regional flavors (e.g., Avakaya from Andhra, Bedmi from UP, or North Indian Mango pickle) that taste "homemade" rather than factory-produced.
+
+2. The Time-Starved "Meal Enhancers"
+People who cook basic meals but want an instant flavor upgrade.
+
+Demographics: Dual-income households, busy parents (30–50), and bachelors.
+
+Pain Point: Lack of time to cook elaborate side dishes or chutneys.
+
+What they want: Consistency and convenience. They look for versatile pickles that pair well with anything from parathas to dal-chawal or even sandwiches.
+
+3. The Health-Conscious & Clean-Label Consumers
+A rapidly growing niche looking for "guilt-free" indulgence.
+
+Demographics: Fitness enthusiasts and health-aware families.
+
+Pain Point: High sodium, low-quality oils (palm oil), and artificial preservatives in mass-market brands.
+
+What they want: Pickles made with cold-pressed oils (mustard or sesame), rock salt (Saindhav), no added sugar, and zero synthetic preservatives. Sun-dried options are a huge plus.
+
+4. The Gourmet & Adventurous Foodies
+Consumers looking for unique culinary experiences.
+
+Demographics: Urban foodies (25–45) who shop at premium grocery stores or organic markets.
+
+Pain Point: Boredom with the standard "Mango/Lime/Chilli" trio.
+
+What they want: Exotic or non-traditional variants. Think Meat Pickles (Prawn/Chicken), Garlic-Stuffed Chillies, Bamboo Shoot, or even fusion flavors like Cranberry or Jalapeño pickles..
+2026-04-03 03:33:07,214 | INFO     | research_crew.main | ======================================================================
+2026-04-03 03:33:07,214 | INFO     | research_crew.main | Using LLM: gpt-4o  temperature=0.3
+2026-04-03 03:33:08,873 | INFO     | research_crew.main | [1/5] Initialising Planner Agent …
+2026-04-03 03:33:08,873 | INFO     | research_crew.agents.planner_agent | Initialising Planner Agent.
+2026-04-03 03:33:08,876 | INFO     | research_crew.main | [2/5] Initialising Search Agent …
+2026-04-03 03:33:08,877 | INFO     | research_crew.agents.search_agent | Initialising Search Agent.
+2026-04-03 03:33:08,877 | INFO     | research_crew.main | [3/5] Initialising Validator Agent …
+2026-04-03 03:33:08,877 | INFO     | research_crew.agents.validator_agent | Initialising Source Validator Agent.
+2026-04-03 03:33:08,882 | INFO     | research_crew.main | [4/5] Initialising Extractor Agent …
+2026-04-03 03:33:08,882 | INFO     | research_crew.agents.extractor_agent | Initialising Evidence Extraction Agent.
+2026-04-03 03:33:08,890 | INFO     | research_crew.main | [5/5] Initialising Synthesizer Agent …
+2026-04-03 03:33:08,890 | INFO     | research_crew.agents.synthesizer_agent | Initialising Research Synthesizer Agent.
+2026-04-03 03:33:08,893 | INFO     | research_crew.main | Building task pipeline …
+2026-04-03 03:33:08,913 | INFO     | research_crew.main | Kicking off CrewAI pipeline …
+2026-04-03 03:33:09,881 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:33:09,881 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.477695 seconds
+2026-04-03 03:33:10,643 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:33:10,643 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.960351 seconds
+2026-04-03 03:33:11,878 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:33:11,878 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:33:11,878 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:33:12,227 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:33:12,229 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.410626 seconds
+2026-04-03 03:33:13,005 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:33:13,005 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.782626 seconds
+2026-04-03 03:33:14,221 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:33:14,224 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:33:14,224 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:33:14,549 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:33:14,549 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.385903 seconds
+2026-04-03 03:33:15,688 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:33:15,690 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.957736 seconds
+2026-04-03 03:33:17,372 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:33:17,376 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:33:17,376 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:33:17,712 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:33:17,713 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.391839 seconds
+2026-04-03 03:33:18,393 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:33:18,394 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.841922 seconds
+2026-04-03 03:33:19,551 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:33:19,551 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:33:19,551 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:34:49,097 | INFO     | research_crew.main | ======================================================================
+2026-04-03 03:34:49,097 | INFO     | research_crew.main | Starting research pipeline for topic: Achari is in the Food vertical, generating pre-revenue targeting: . The "Taste of Home" Seekers
+This is often the largest segment for traditional, handmade, or regional pickle brands.
+
+Demographics: Students living in hostels, young working professionals (22–35) living away from their hometowns, and the Indian diaspora abroad.
+
+Pain Point: Bland mess food or the inability to recreate grandmother’s recipes.
+
+What they want: Authentic, regional flavors (e.g., Avakaya from Andhra, Bedmi from UP, or North Indian Mango pickle) that taste "homemade" rather than factory-produced.
+
+2. The Time-Starved "Meal Enhancers"
+People who cook basic meals but want an instant flavor upgrade.
+
+Demographics: Dual-income households, busy parents (30–50), and bachelors.
+
+Pain Point: Lack of time to cook elaborate side dishes or chutneys.
+
+What they want: Consistency and convenience. They look for versatile pickles that pair well with anything from parathas to dal-chawal or even sandwiches.
+
+3. The Health-Conscious & Clean-Label Consumers
+A rapidly growing niche looking for "guilt-free" indulgence.
+
+Demographics: Fitness enthusiasts and health-aware families.
+
+Pain Point: High sodium, low-quality oils (palm oil), and artificial preservatives in mass-market brands.
+
+What they want: Pickles made with cold-pressed oils (mustard or sesame), rock salt (Saindhav), no added sugar, and zero synthetic preservatives. Sun-dried options are a huge plus.
+
+4. The Gourmet & Adventurous Foodies
+Consumers looking for unique culinary experiences.
+
+Demographics: Urban foodies (25–45) who shop at premium grocery stores or organic markets.
+
+Pain Point: Boredom with the standard "Mango/Lime/Chilli" trio.
+
+What they want: Exotic or non-traditional variants. Think Meat Pickles (Prawn/Chicken), Garlic-Stuffed Chillies, Bamboo Shoot, or even fusion flavors like Cranberry or Jalapeño pickles.
+.
+2026-04-03 03:34:49,097 | INFO     | research_crew.main | ======================================================================
+2026-04-03 03:34:49,097 | INFO     | research_crew.main | Using LLM: gpt-4o  temperature=0.3
+2026-04-03 03:34:50,805 | INFO     | research_crew.main | [1/5] Initialising Planner Agent …
+2026-04-03 03:34:50,805 | INFO     | research_crew.agents.planner_agent | Initialising Planner Agent.
+2026-04-03 03:34:50,807 | INFO     | research_crew.main | [2/5] Initialising Search Agent …
+2026-04-03 03:34:50,807 | INFO     | research_crew.agents.search_agent | Initialising Search Agent.
+2026-04-03 03:34:50,810 | INFO     | research_crew.main | [3/5] Initialising Validator Agent …
+2026-04-03 03:34:50,810 | INFO     | research_crew.agents.validator_agent | Initialising Source Validator Agent.
+2026-04-03 03:34:50,811 | INFO     | research_crew.main | [4/5] Initialising Extractor Agent …
+2026-04-03 03:34:50,811 | INFO     | research_crew.agents.extractor_agent | Initialising Evidence Extraction Agent.
+2026-04-03 03:34:50,814 | INFO     | research_crew.main | [5/5] Initialising Synthesizer Agent …
+2026-04-03 03:34:50,814 | INFO     | research_crew.agents.synthesizer_agent | Initialising Research Synthesizer Agent.
+2026-04-03 03:34:50,815 | INFO     | research_crew.main | Building task pipeline …
+2026-04-03 03:34:50,826 | INFO     | research_crew.main | Kicking off CrewAI pipeline …
+2026-04-03 03:34:53,151 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:34:53,151 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.380569 seconds
+2026-04-03 03:34:53,824 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:34:53,825 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.765033 seconds
+2026-04-03 03:34:54,988 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:34:54,990 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:34:54,991 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:34:55,314 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:34:55,314 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.433310 seconds
+2026-04-03 03:34:56,064 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:34:56,070 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.845358 seconds
+2026-04-03 03:34:57,665 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:34:57,665 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:34:57,668 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:34:58,055 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:34:58,057 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.422317 seconds
+2026-04-03 03:34:58,760 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:34:58,762 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.778731 seconds
+2026-04-03 03:34:59,844 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:34:59,844 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:34:59,847 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:35:01,243 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:35:01,244 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.383524 seconds
+2026-04-03 03:35:01,928 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:35:01,928 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.811368 seconds
+2026-04-03 03:35:03,024 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:35:03,026 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:35:03,026 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:39:06,467 | INFO     | research_crew.main | ======================================================================
+2026-04-03 03:39:06,467 | INFO     | research_crew.main | Starting research pipeline for topic: Achari is in the Food vertical, generating pre-revenue targeting: . The "Taste of Home" Seekers
+This is often the largest segment for traditional, handmade, or regional pickle brands.
+
+Demographics: Students living in hostels, young working professionals (22–35) living away from their hometowns, and the Indian diaspora abroad.
+
+Pain Point: Bland mess food or the inability to recreate grandmother’s recipes.
+
+What they want: Authentic, regional flavors (e.g., Avakaya from Andhra, Bedmi from UP, or North Indian Mango pickle) that taste "homemade" rather than factory-produced.
+
+2. The Time-Starved "Meal Enhancers"
+People who cook basic meals but want an instant flavor upgrade.
+
+Demographics: Dual-income households, busy parents (30–50), and bachelors.
+
+Pain Point: Lack of time to cook elaborate side dishes or chutneys.
+
+What they want: Consistency and convenience. They look for versatile pickles that pair well with anything from parathas to dal-chawal or even sandwiches.
+
+3. The Health-Conscious & Clean-Label Consumers
+A rapidly growing niche looking for "guilt-free" indulgence.
+
+Demographics: Fitness enthusiasts and health-aware families.
+
+Pain Point: High sodium, low-quality oils (palm oil), and artificial preservatives in mass-market brands.
+
+What they want: Pickles made with cold-pressed oils (mustard or sesame), rock salt (Saindhav), no added sugar, and zero synthetic preservatives. Sun-dried options are a huge plus.
+
+4. The Gourmet & Adventurous Foodies
+Consumers looking for unique culinary experiences.
+
+Demographics: Urban foodies (25–45) who shop at premium grocery stores or organic markets.
+
+Pain Point: Boredom with the standard "Mango/Lime/Chilli" trio.
+
+What they want: Exotic or non-traditional variants. Think Meat Pickles (Prawn/Chicken), Garlic-Stuffed Chillies, Bamboo Shoot, or even fusion flavors like Cranberry or Jalapeño pickles..
+2026-04-03 03:39:06,468 | INFO     | research_crew.main | ======================================================================
+2026-04-03 03:39:06,468 | INFO     | research_crew.main | Using LLM: gpt-4o  temperature=0.3
+2026-04-03 03:39:08,597 | INFO     | research_crew.main | [1/5] Initialising Planner Agent …
+2026-04-03 03:39:08,597 | INFO     | research_crew.agents.planner_agent | Initialising Planner Agent.
+2026-04-03 03:39:08,597 | INFO     | research_crew.main | [2/5] Initialising Search Agent …
+2026-04-03 03:39:08,597 | INFO     | research_crew.agents.search_agent | Initialising Search Agent.
+2026-04-03 03:39:08,602 | INFO     | research_crew.main | [3/5] Initialising Validator Agent …
+2026-04-03 03:39:08,602 | INFO     | research_crew.agents.validator_agent | Initialising Source Validator Agent.
+2026-04-03 03:39:08,602 | INFO     | research_crew.main | [4/5] Initialising Extractor Agent …
+2026-04-03 03:39:08,602 | INFO     | research_crew.agents.extractor_agent | Initialising Evidence Extraction Agent.
+2026-04-03 03:39:08,605 | INFO     | research_crew.main | [5/5] Initialising Synthesizer Agent …
+2026-04-03 03:39:08,606 | INFO     | research_crew.agents.synthesizer_agent | Initialising Research Synthesizer Agent.
+2026-04-03 03:39:08,606 | INFO     | research_crew.main | Building task pipeline …
+2026-04-03 03:39:08,622 | INFO     | research_crew.main | Kicking off CrewAI pipeline …
+2026-04-03 03:39:10,492 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:39:10,495 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.492816 seconds
+2026-04-03 03:39:11,395 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:39:11,397 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.874701 seconds
+2026-04-03 03:39:12,855 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:39:12,857 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:39:12,858 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:39:13,240 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:39:13,241 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.390124 seconds
+2026-04-03 03:39:13,917 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:39:13,918 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.771510 seconds
+2026-04-03 03:39:14,971 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:39:14,971 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:39:14,974 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:39:15,376 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:39:15,378 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.400568 seconds
+2026-04-03 03:39:16,088 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:39:16,090 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.765372 seconds
+2026-04-03 03:39:17,157 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:39:17,159 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:39:17,160 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:39:17,547 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:39:17,547 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.380564 seconds
+2026-04-03 03:39:18,294 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:39:18,294 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.884629 seconds
+2026-04-03 03:39:19,480 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:39:19,480 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:39:19,480 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:47:42,127 | INFO     | research_crew.main | ======================================================================
+2026-04-03 03:47:42,127 | INFO     | research_crew.main | Starting research pipeline for topic: Achari is in the Food vertical, generating pre-revenue targeting: . The "Taste of Home" SeekersThis is often the largest segment for traditional, handmade, or regional pickle brands.Demographics: Students living in hostels, young working professionals (22–35) living away from their hometowns, and the Indian diaspora abroad.Pain Point: Bland mess food or the inability to recreate grandmother’s recipes.What they want: Authentic, regional flavors (e.g., Avakaya from Andhra, Bedmi from UP, or North Indian Mango pickle) that taste "homemade" rather than factory-produced.2. The Time-Starved "Meal Enhancers"People who cook basic meals but want an instant flavor upgrade.Demographics: Dual-income households, busy parents (30–50), and bachelors.Pain Point: Lack of time to cook elaborate side dishes or chutneys.What they want: Consistency and convenience. They look for versatile pickles that pair well with anything from parathas to dal-chawal or even sandwiches.3. The Health-Conscious & Clean-Label ConsumersA rapidly growing niche looking for "guilt-free" indulgence.Demographics: Fitness enthusiasts and health-aware families.Pain Point: High sodium, low-quality oils (palm oil), and artificial preservatives in mass-market brands.What they want: Pickles made with cold-pressed oils (mustard or sesame), rock salt (Saindhav), no added sugar, and zero synthetic preservatives. Sun-dried options are a huge plus.4. The Gourmet & Adventurous FoodiesConsumers looking for unique culinary experiences.Demographics: Urban foodies (25–45) who shop at premium grocery stores or organic markets.Pain Point: Boredom with the standard "Mango/Lime/Chilli" trio.What they want: Exotic or non-traditional variants. Think Meat Pickles (Prawn/Chicken), Garlic-Stuffed Chillies, Bamboo Shoot, or even fusion flavors like Cranberry or Jalapeño pickles.Target Audience Summary TableSegmentCore MotivationKey Purchase DriverNostalgicEmotional connection"Maa ke haath ka swaad" (Handmade feel)ConvenienceEasy meal prepPrice, availability, and sturdy packagingWellnessHealth and safetyNatural ingredients, "Oil-free" or "Low-salt"GourmetSocial status/CuriosityPremium packaging, unique/rare ingredients.
+2026-04-03 03:47:42,129 | INFO     | research_crew.main | ======================================================================
+2026-04-03 03:47:42,129 | INFO     | research_crew.main | Using LLM: gpt-4o  temperature=0.3
+2026-04-03 03:47:43,947 | INFO     | research_crew.main | [1/5] Initialising Planner Agent …
+2026-04-03 03:47:43,947 | INFO     | research_crew.agents.planner_agent | Initialising Planner Agent.
+2026-04-03 03:47:43,947 | INFO     | research_crew.main | [2/5] Initialising Search Agent …
+2026-04-03 03:47:43,947 | INFO     | research_crew.agents.search_agent | Initialising Search Agent.
+2026-04-03 03:47:43,953 | INFO     | research_crew.main | [3/5] Initialising Validator Agent …
+2026-04-03 03:47:43,953 | INFO     | research_crew.agents.validator_agent | Initialising Source Validator Agent.
+2026-04-03 03:47:43,953 | INFO     | research_crew.main | [4/5] Initialising Extractor Agent …
+2026-04-03 03:47:43,955 | INFO     | research_crew.agents.extractor_agent | Initialising Evidence Extraction Agent.
+2026-04-03 03:47:43,964 | INFO     | research_crew.main | [5/5] Initialising Synthesizer Agent …
+2026-04-03 03:47:43,964 | INFO     | research_crew.agents.synthesizer_agent | Initialising Research Synthesizer Agent.
+2026-04-03 03:47:43,964 | INFO     | research_crew.main | Building task pipeline …
+2026-04-03 03:47:43,985 | INFO     | research_crew.main | Kicking off CrewAI pipeline …
+2026-04-03 03:47:45,128 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:47:45,128 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.480689 seconds
+2026-04-03 03:47:45,990 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:47:45,992 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.813804 seconds
+2026-04-03 03:47:47,171 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:47:47,171 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:47:47,171 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:47:47,497 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:47:47,497 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.382671 seconds
+2026-04-03 03:47:48,214 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:47:48,218 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.755472 seconds
+2026-04-03 03:47:49,362 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:47:49,363 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:47:49,363 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:47:49,694 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:47:49,698 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.456622 seconds
+2026-04-03 03:47:50,471 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:47:50,473 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.801785 seconds
+2026-04-03 03:47:51,615 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:47:51,616 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:47:51,616 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:47:51,947 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:47:51,947 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.377453 seconds
+2026-04-03 03:47:52,632 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:47:52,638 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.829794 seconds
+2026-04-03 03:47:53,748 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:47:53,753 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:47:53,753 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:48:51,868 | INFO     | research_crew.main | ======================================================================
+2026-04-03 03:48:51,868 | INFO     | research_crew.main | Starting research pipeline for topic: Achari is in the Food vertical, generating 1k_10k targeting: . The "Taste of Home" SeekersThis is often the largest segment for traditional, handmade, or regional pickle brands.Demographics: Students living in hostels, young working professionals (22–35) living away from their hometowns, and the Indian diaspora abroad.Pain Point: Bland mess food or the inability to recreate grandmother’s recipes.What they want: Authentic, regional flavors (e.g., Avakaya from Andhra, Bedmi from UP, or North Indian Mango pickle) that taste "homemade" rather than factory-produced.2. The Time-Starved "Meal Enhancers"People who cook basic meals but want an instant flavor upgrade.Demographics: Dual-income households, busy parents (30–50), and bachelors.Pain Point: Lack of time to cook elaborate side dishes or chutneys.What they want: Consistency and convenience. They look for versatile pickles that pair well with anything from parathas to dal-chawal or even sandwiches.3. The Health-Conscious & Clean-Label ConsumersA rapidly growing niche looking for "guilt-free" indulgence.Demographics: Fitness enthusiasts and health-aware families.Pain Point: High sodium, low-quality oils (palm oil), and artificial preservatives in mass-market brands.What they want: Pickles made with cold-pressed oils (mustard or sesame), rock salt (Saindhav), no added sugar, and zero synthetic preservatives. Sun-dried options are a huge plus.4. The Gourmet & Adventurous FoodiesConsumers looking for unique culinary experiences.Demographics: Urban foodies (25–45) who shop at premium grocery stores or organic markets.Pain Point: Boredom with the standard "Mango/Lime/Chilli" trio.What they want: Exotic or non-traditional variants. Think Meat Pickles (Prawn/Chicken), Garlic-Stuffed Chillies, Bamboo Shoot, or even fusion flavors like Cranberry or Jalapeño pickles.Target Audience Summary TableSegmentCore MotivationKey Purchase DriverNostalgicEmotional connection"Maa ke haath ka swaad" (Handmade feel)ConvenienceEasy meal prepPrice, availability, and sturdy packagingWellnessHealth and safetyNatural ingredients, "Oil-free" or "Low-salt"GourmetSocial status/CuriosityPremium packaging, unique/rare ingredients.
+2026-04-03 03:48:51,870 | INFO     | research_crew.main | ======================================================================
+2026-04-03 03:48:51,870 | INFO     | research_crew.main | Using LLM: gpt-4o  temperature=0.3
+2026-04-03 03:48:53,715 | INFO     | research_crew.main | [1/5] Initialising Planner Agent …
+2026-04-03 03:48:53,717 | INFO     | research_crew.agents.planner_agent | Initialising Planner Agent.
+2026-04-03 03:48:53,718 | INFO     | research_crew.main | [2/5] Initialising Search Agent …
+2026-04-03 03:48:53,718 | INFO     | research_crew.agents.search_agent | Initialising Search Agent.
+2026-04-03 03:48:53,722 | INFO     | research_crew.main | [3/5] Initialising Validator Agent …
+2026-04-03 03:48:53,723 | INFO     | research_crew.agents.validator_agent | Initialising Source Validator Agent.
+2026-04-03 03:48:53,723 | INFO     | research_crew.main | [4/5] Initialising Extractor Agent …
+2026-04-03 03:48:53,724 | INFO     | research_crew.agents.extractor_agent | Initialising Evidence Extraction Agent.
+2026-04-03 03:48:53,726 | INFO     | research_crew.main | [5/5] Initialising Synthesizer Agent …
+2026-04-03 03:48:53,726 | INFO     | research_crew.agents.synthesizer_agent | Initialising Research Synthesizer Agent.
+2026-04-03 03:48:53,726 | INFO     | research_crew.main | Building task pipeline …
+2026-04-03 03:48:53,738 | INFO     | research_crew.main | Kicking off CrewAI pipeline …
+2026-04-03 03:48:55,956 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:48:55,958 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.413047 seconds
+2026-04-03 03:48:56,898 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:48:56,898 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.810258 seconds
+2026-04-03 03:48:58,103 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:48:58,105 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:48:58,105 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:48:58,480 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:48:58,480 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.398588 seconds
+2026-04-03 03:48:59,223 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:48:59,223 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.845728 seconds
+2026-04-03 03:49:00,718 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:49:00,721 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:49:00,722 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:49:01,133 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:49:01,133 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.417843 seconds
+2026-04-03 03:49:01,890 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:49:01,890 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.930211 seconds
+2026-04-03 03:49:03,179 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:49:03,184 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:49:03,184 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:49:03,562 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:49:03,563 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.463693 seconds
+2026-04-03 03:49:04,378 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:49:04,381 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.803603 seconds
+2026-04-03 03:49:05,999 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 03:49:05,999 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 03:49:06,002 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 04:02:12,958 | INFO     | research_crew.main | ======================================================================
+2026-04-03 04:02:12,958 | INFO     | research_crew.main | Starting research pipeline for topic: achari is in the food vertical, generating 1k_10k targeting: 1. The "Taste of Home" Seekers
+This is often the largest segment for traditional, handmade, or regional pickle brands.
+
+Demographics: Students living in hostels, young working professionals (22–35) living away from their hometowns, and the Indian diaspora abroad.
+
+Pain Point: Bland mess food or the inability to recreate grandmother’s recipes.
+
+What they want: Authentic, regional flavors (e.g., Avakaya from Andhra, Bedmi from UP, or North Indian Mango pickle) that taste "homemade" rather than factory-produced.
+
+2. The Time-Starved "Meal Enhancers"
+People who cook basic meals but want an instant flavor upgrade.
+
+Demographics: Dual-income households, busy parents (30–50), and bachelors.
+
+Pain Point: Lack of time to cook elaborate side dishes or chutneys.
+
+What they want: Consistency and convenience. They look for versatile pickles that pair well with anything from parathas to dal-chawal or even sandwiches.
+
+3. The Health-Conscious & Clean-Label Consumers
+A rapidly growing niche looking for "guilt-free" indulgence.
+
+Demographics: Fitness enthusiasts and health-aware families.
+
+Pain Point: High sodium, low-quality oils (palm oil), and artificial preservatives in mass-market brands.
+
+What they want: Pickles made with cold-pressed oils (mustard or sesame), rock salt (Saindhav), no added sugar, and zero synthetic preservatives. Sun-dried options are a huge plus.
+
+4. The Gourmet & Adventurous Foodies
+Consumers looking for unique culinary experiences.
+
+Demographics: Urban foodies (25–45) who shop at premium grocery stores or organic markets.
+
+Pain Point: Boredom with the standard "Mango/Lime/Chilli" trio.
+
+What they want: Exotic or non-traditional variants. Think Meat Pickles (Prawn/Chicken), Garlic-Stuffed Chillies, Bamboo Shoot, or even fusion flavors like Cranberry or Jalapeño pickles.
+
+Target Audience Summary Table
+Segment	Core Motivation	Key Purchase Driver
+Nostalgic	Emotional connection	"Maa ke haath ka swaad" (Handmade feel)
+Convenience	Easy meal prep	Price, availability, and sturdy packaging
+Wellness	Health and safety	Natural ingredients, "Oil-free" or "Low-salt"
+Gourmet	Social status/Curiosity	Premium packaging, unique/rare ingredients
+Pro-Tip for Branding:
+If you are targeting Gen Z and Millennials, focus on smaller "trial" packs and aesthetic packaging. If you are targeting Traditional Households, focus on bulk jars (1kg+) and the purity of the spices used..
+2026-04-03 04:02:12,958 | INFO     | research_crew.main | ======================================================================
+2026-04-03 04:02:12,960 | INFO     | research_crew.main | Using LLM: gpt-4o  temperature=0.3
+2026-04-03 04:02:14,583 | INFO     | research_crew.main | [1/5] Initialising Planner Agent …
+2026-04-03 04:02:14,583 | INFO     | research_crew.agents.planner_agent | Initialising Planner Agent.
+2026-04-03 04:02:14,583 | INFO     | research_crew.main | [2/5] Initialising Search Agent …
+2026-04-03 04:02:14,583 | INFO     | research_crew.agents.search_agent | Initialising Search Agent.
+2026-04-03 04:02:14,589 | INFO     | research_crew.main | [3/5] Initialising Validator Agent …
+2026-04-03 04:02:14,590 | INFO     | research_crew.agents.validator_agent | Initialising Source Validator Agent.
+2026-04-03 04:02:14,590 | INFO     | research_crew.main | [4/5] Initialising Extractor Agent …
+2026-04-03 04:02:14,590 | INFO     | research_crew.agents.extractor_agent | Initialising Evidence Extraction Agent.
+2026-04-03 04:02:14,593 | INFO     | research_crew.main | [5/5] Initialising Synthesizer Agent …
+2026-04-03 04:02:14,593 | INFO     | research_crew.agents.synthesizer_agent | Initialising Research Synthesizer Agent.
+2026-04-03 04:02:14,594 | INFO     | research_crew.main | Building task pipeline …
+2026-04-03 04:02:14,605 | INFO     | research_crew.main | Kicking off CrewAI pipeline …
+2026-04-03 04:02:16,112 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 04:02:16,114 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.459481 seconds
+2026-04-03 04:02:16,933 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 04:02:16,938 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.812014 seconds
+2026-04-03 04:02:18,085 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 04:02:18,088 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 04:02:18,088 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 04:02:18,444 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 04:02:18,447 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.447604 seconds
+2026-04-03 04:02:19,201 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 04:02:19,201 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.945402 seconds
+2026-04-03 04:02:20,465 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 04:02:20,468 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 04:02:20,470 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 04:02:20,940 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 04:02:20,940 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.453619 seconds
+2026-04-03 04:02:21,693 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 04:02:21,695 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.830396 seconds
+2026-04-03 04:02:22,922 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 04:02:22,922 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 04:02:22,922 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 04:02:23,272 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 04:02:23,276 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.391159 seconds
+2026-04-03 04:02:23,977 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 04:02:23,985 | INFO     | openai._base_client | Retrying request to /chat/completions in 0.873171 seconds
+2026-04-03 04:02:25,164 | INFO     | httpx | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-03 04:02:25,168 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 04:02:25,169 | ERROR    | root | OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-03 04:05:07,174 | INFO     | research_crew.main | ======================================================================
+2026-04-03 04:05:07,174 | INFO     | research_crew.main | Starting research pipeline for topic: achari is in the food vertical, generating 1k_10k targeting: 1. The "Taste of Home" Seekers
+This is often the largest segment for traditional, handmade, or regional pickle brands.
+
+Demographics: Students living in hostels, young working professionals (22–35) living away from their hometowns, and the Indian diaspora abroad.
+
+Pain Point: Bland mess food or the inability to recreate grandmother’s recipes.
+
+What they want: Authentic, regional flavors (e.g., Avakaya from Andhra, Bedmi from UP, or North Indian Mango pickle) that taste "homemade" rather than factory-produced.
+
+2. The Time-Starved "Meal Enhancers"
+People who cook basic meals but want an instant flavor upgrade.
+
+Demographics: Dual-income households, busy parents (30–50), and bachelors.
+
+Pain Point: Lack of time to cook elaborate side dishes or chutneys.
+
+What they want: Consistency and convenience. They look for versatile pickles that pair well with anything from parathas to dal-chawal or even sandwiches.
+
+3. The Health-Conscious & Clean-Label Consumers
+A rapidly growing niche looking for "guilt-free" indulgence.
+
+Demographics: Fitness enthusiasts and health-aware families.
+
+Pain Point: High sodium, low-quality oils (palm oil), and artificial preservatives in mass-market brands.
+
+What they want: Pickles made with cold-pressed oils (mustard or sesame), rock salt (Saindhav), no added sugar, and zero synthetic preservatives. Sun-dried options are a huge plus.
+
+4. The Gourmet & Adventurous Foodies
+Consumers looking for unique culinary experiences.
+
+Demographics: Urban foodies (25–45) who shop at premium grocery stores or organic markets.
+
+Pain Point: Boredom with the standard "Mango/Lime/Chilli" trio.
+
+What they want: Exotic or non-traditional variants. Think Meat Pickles (Prawn/Chicken), Garlic-Stuffed Chillies, Bamboo Shoot, or even fusion flavors like Cranberry or Jalapeño pickles.
+
+Target Audience Summary Table
+Segment	Core Motivation	Key Purchase Driver
+Nostalgic	Emotional connection	"Maa ke haath ka swaad" (Handmade feel)
+Convenience	Easy meal prep	Price, availability, and sturdy packaging
+Wellness	Health and safety	Natural ingredients, "Oil-free" or "Low-salt"
+Gourmet	Social status/Curiosity	Premium packaging, unique/rare ingredients
+Pro-Tip for Branding:
+If you are targeting Gen Z and Millennials, focus on smaller "trial" packs and aesthetic packaging. If you are targeting Traditional Households, focus on bulk jars (1kg+) and the purity of the spices used..
+2026-04-03 04:05:07,174 | INFO     | research_crew.main | ======================================================================
+2026-04-03 04:05:07,174 | INFO     | research_crew.main | Using LLM: gemini/gemini-1.5-flash  temperature=0.3
+2026-04-03 04:06:38,542 | INFO     | research_crew.main | ======================================================================
+2026-04-03 04:06:38,542 | INFO     | research_crew.main | Starting research pipeline for topic: achari is in the food vertical, generating 1k_10k targeting: 1. The "Taste of Home" Seekers
+This is often the largest segment for traditional, handmade, or regional pickle brands.
+
+Demographics: Students living in hostels, young working professionals (22–35) living away from their hometowns, and the Indian diaspora abroad.
+
+Pain Point: Bland mess food or the inability to recreate grandmother’s recipes.
+
+What they want: Authentic, regional flavors (e.g., Avakaya from Andhra, Bedmi from UP, or North Indian Mango pickle) that taste "homemade" rather than factory-produced.
+
+2. The Time-Starved "Meal Enhancers"
+People who cook basic meals but want an instant flavor upgrade.
+
+Demographics: Dual-income households, busy parents (30–50), and bachelors.
+
+Pain Point: Lack of time to cook elaborate side dishes or chutneys.
+
+What they want: Consistency and convenience. They look for versatile pickles that pair well with anything from parathas to dal-chawal or even sandwiches.
+
+3. The Health-Conscious & Clean-Label Consumers
+A rapidly growing niche looking for "guilt-free" indulgence.
+
+Demographics: Fitness enthusiasts and health-aware families.
+
+Pain Point: High sodium, low-quality oils (palm oil), and artificial preservatives in mass-market brands.
+
+What they want: Pickles made with cold-pressed oils (mustard or sesame), rock salt (Saindhav), no added sugar, and zero synthetic preservatives. Sun-dried options are a huge plus.
+
+4. The Gourmet & Adventurous Foodies
+Consumers looking for unique culinary experiences.
+
+Demographics: Urban foodies (25–45) who shop at premium grocery stores or organic markets.
+
+Pain Point: Boredom with the standard "Mango/Lime/Chilli" trio.
+
+What they want: Exotic or non-traditional variants. Think Meat Pickles (Prawn/Chicken), Garlic-Stuffed Chillies, Bamboo Shoot, or even fusion flavors like Cranberry or Jalapeño pickles.
+
+Target Audience Summary Table
+Segment	Core Motivation	Key Purchase Driver
+Nostalgic	Emotional connection	"Maa ke haath ka swaad" (Handmade feel)
+Convenience	Easy meal prep	Price, availability, and sturdy packaging
+Wellness	Health and safety	Natural ingredients, "Oil-free" or "Low-salt"
+Gourmet	Social status/Curiosity	Premium packaging, unique/rare ingredients
+Pro-Tip for Branding:
+If you are targeting Gen Z and Millennials, focus on smaller "trial" packs and aesthetic packaging. If you are targeting Traditional Households, focus on bulk jars (1kg+) and the purity of the spices used..
+2026-04-03 04:06:38,544 | INFO     | research_crew.main | ======================================================================
+2026-04-03 04:06:38,544 | INFO     | research_crew.main | Using LLM: gemini/gemini-1.5-flash  temperature=0.3
+2026-04-03 04:06:41,488 | INFO     | research_crew.main | [1/5] Initialising Planner Agent …
+2026-04-03 04:06:41,488 | INFO     | research_crew.agents.planner_agent | Initialising Planner Agent.
+2026-04-03 04:06:41,490 | INFO     | research_crew.main | [2/5] Initialising Search Agent …
+2026-04-03 04:06:41,490 | INFO     | research_crew.agents.search_agent | Initialising Search Agent.
+2026-04-03 04:06:41,492 | INFO     | research_crew.main | [3/5] Initialising Validator Agent …
+2026-04-03 04:06:41,492 | INFO     | research_crew.agents.validator_agent | Initialising Source Validator Agent.
+2026-04-03 04:06:41,492 | INFO     | research_crew.main | [4/5] Initialising Extractor Agent …
+2026-04-03 04:06:41,492 | INFO     | research_crew.agents.extractor_agent | Initialising Evidence Extraction Agent.
+2026-04-03 04:06:41,494 | INFO     | research_crew.main | [5/5] Initialising Synthesizer Agent …
+2026-04-03 04:06:41,495 | INFO     | research_crew.agents.synthesizer_agent | Initialising Research Synthesizer Agent.
+2026-04-03 04:06:41,496 | INFO     | research_crew.main | Building task pipeline …
+2026-04-03 04:06:41,505 | INFO     | research_crew.main | Kicking off CrewAI pipeline …
+2026-04-03 04:06:41,564 | INFO     | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-04-03 04:06:42,094 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-04-03 04:06:42,096 | ERROR    | root | Google Gemini API error: 404 - models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-04-03 04:06:42,108 | INFO     | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-04-03 04:06:42,294 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-04-03 04:06:42,297 | ERROR    | root | Google Gemini API error: 404 - models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-04-03 04:06:42,311 | INFO     | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-04-03 04:06:42,671 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-04-03 04:06:42,671 | ERROR    | root | Google Gemini API error: 404 - models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-04-03 04:06:42,710 | INFO     | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-04-03 04:06:42,935 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-04-03 04:06:42,936 | ERROR    | root | Google Gemini API error: 404 - models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-04-03 04:10:39,974 | INFO     | research_crew.main | ======================================================================
+2026-04-03 04:10:39,974 | INFO     | research_crew.main | Starting research pipeline for topic: achari is in the food vertical, generating 1k_10k targeting: 1. The "Taste of Home" Seekers
+This is often the largest segment for traditional, handmade, or regional pickle brands.
+
+Demographics: Students living in hostels, young working professionals (22–35) living away from their hometowns, and the Indian diaspora abroad.
+
+Pain Point: Bland mess food or the inability to recreate grandmother’s recipes.
+
+What they want: Authentic, regional flavors (e.g., Avakaya from Andhra, Bedmi from UP, or North Indian Mango pickle) that taste "homemade" rather than factory-produced.
+
+2. The Time-Starved "Meal Enhancers"
+People who cook basic meals but want an instant flavor upgrade.
+
+Demographics: Dual-income households, busy parents (30–50), and bachelors.
+
+Pain Point: Lack of time to cook elaborate side dishes or chutneys.
+
+What they want: Consistency and convenience. They look for versatile pickles that pair well with anything from parathas to dal-chawal or even sandwiches.
+
+3. The Health-Conscious & Clean-Label Consumers
+A rapidly growing niche looking for "guilt-free" indulgence.
+
+Demographics: Fitness enthusiasts and health-aware families.
+
+Pain Point: High sodium, low-quality oils (palm oil), and artificial preservatives in mass-market brands.
+
+What they want: Pickles made with cold-pressed oils (mustard or sesame), rock salt (Saindhav), no added sugar, and zero synthetic preservatives. Sun-dried options are a huge plus.
+
+4. The Gourmet & Adventurous Foodies
+Consumers looking for unique culinary experiences.
+
+Demographics: Urban foodies (25–45) who shop at premium grocery stores or organic markets.
+
+Pain Point: Boredom with the standard "Mango/Lime/Chilli" trio.
+
+What they want: Exotic or non-traditional variants. Think Meat Pickles (Prawn/Chicken), Garlic-Stuffed Chillies, Bamboo Shoot, or even fusion flavors like Cranberry or Jalapeño pickles.
+
+Target Audience Summary Table
+Segment	Core Motivation	Key Purchase Driver
+Nostalgic	Emotional connection	"Maa ke haath ka swaad" (Handmade feel)
+Convenience	Easy meal prep	Price, availability, and sturdy packaging
+Wellness	Health and safety	Natural ingredients, "Oil-free" or "Low-salt"
+Gourmet	Social status/Curiosity	Premium packaging, unique/rare ingredients
+Pro-Tip for Branding:
+If you are targeting Gen Z and Millennials, focus on smaller "trial" packs and aesthetic packaging. If you are targeting Traditional Households, focus on bulk jars (1kg+) and the purity of the spices used..
+2026-04-03 04:10:39,974 | INFO     | research_crew.main | ======================================================================
+2026-04-03 04:10:39,974 | INFO     | research_crew.main | Using LLM: gemini/gemini-2.5-flash  temperature=0.3
+2026-04-03 04:10:42,197 | INFO     | research_crew.main | [1/5] Initialising Planner Agent …
+2026-04-03 04:10:42,197 | INFO     | research_crew.agents.planner_agent | Initialising Planner Agent.
+2026-04-03 04:10:42,197 | INFO     | research_crew.main | [2/5] Initialising Search Agent …
+2026-04-03 04:10:42,197 | INFO     | research_crew.agents.search_agent | Initialising Search Agent.
+2026-04-03 04:10:42,205 | INFO     | research_crew.main | [3/5] Initialising Validator Agent …
+2026-04-03 04:10:42,205 | INFO     | research_crew.agents.validator_agent | Initialising Source Validator Agent.
+2026-04-03 04:10:42,205 | INFO     | research_crew.main | [4/5] Initialising Extractor Agent …
+2026-04-03 04:10:42,205 | INFO     | research_crew.agents.extractor_agent | Initialising Evidence Extraction Agent.
+2026-04-03 04:10:42,212 | INFO     | research_crew.main | [5/5] Initialising Synthesizer Agent …
+2026-04-03 04:10:42,212 | INFO     | research_crew.agents.synthesizer_agent | Initialising Research Synthesizer Agent.
+2026-04-03 04:10:42,213 | INFO     | research_crew.main | Building task pipeline …
+2026-04-03 04:10:42,228 | INFO     | research_crew.main | Kicking off CrewAI pipeline …
+2026-04-03 04:10:42,314 | INFO     | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-04-03 04:10:53,235 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-04-03 04:10:53,397 | INFO     | root | Gemini: Successfully validated tool 'exa_academic_search'
+2026-04-03 04:10:53,397 | INFO     | root | Gemini: Successfully validated tool 'tavily_academic_search'
+2026-04-03 04:10:58,877 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-04-03 04:11:01,611 | INFO     | research_crew.tools.search_tool | Exa returned 8 usable results for query: traditional Indian pickle fermentation microbiology shelf life
+2026-04-03 04:11:01,619 | INFO     | root | Gemini: Successfully validated tool 'exa_academic_search'
+2026-04-03 04:11:01,620 | INFO     | root | Gemini: Successfully validated tool 'tavily_academic_search'
+2026-04-03 04:11:02,797 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-04-03 04:11:04,638 | INFO     | research_crew.tools.search_tool | Exa returned 8 usable results for query: consumer preferences Indian pickles convenience health organic market research
+2026-04-03 04:11:04,659 | INFO     | root | Gemini: Successfully validated tool 'exa_academic_search'
+2026-04-03 04:11:04,660 | INFO     | root | Gemini: Successfully validated tool 'tavily_academic_search'
+2026-04-03 04:11:07,555 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-04-03 04:11:10,032 | INFO     | research_crew.tools.search_tool | Exa returned 8 usable results for query: natural preservatives low sodium cold pressed oil pickle formulation challenges
+2026-04-03 04:11:10,057 | INFO     | root | Gemini: Successfully validated tool 'exa_academic_search'
+2026-04-03 04:11:10,064 | INFO     | root | Gemini: Successfully validated tool 'tavily_academic_search'
+2026-04-03 04:11:12,788 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-04-03 04:11:14,837 | INFO     | research_crew.tools.search_tool | Exa returned 6 usable results for query: exotic Indian pickle variants product innovation gourmet food trends
+2026-04-03 04:11:14,862 | INFO     | root | Gemini: Successfully validated tool 'exa_academic_search'
+2026-04-03 04:11:14,864 | INFO     | root | Gemini: Successfully validated tool 'tavily_academic_search'
+2026-04-03 04:11:18,120 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-04-03 04:11:20,082 | INFO     | research_crew.tools.search_tool | Exa returned 8 usable results for query: ethnic food branding packaging strategy millennial Gen Z consumer perception
+2026-04-03 04:11:20,098 | INFO     | root | Gemini: Successfully validated tool 'exa_academic_search'
+2026-04-03 04:11:20,102 | INFO     | root | Gemini: Successfully validated tool 'tavily_academic_search'
+2026-04-03 04:11:20,611 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-03 04:11:20,613 | ERROR    | root | Google Gemini API error: 429 - You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash
+Please retry in 37.088012589s.
+2026-04-03 04:11:20,638 | INFO     | root | Gemini: Successfully validated tool 'exa_academic_search'
+2026-04-03 04:11:20,645 | INFO     | root | Gemini: Successfully validated tool 'tavily_academic_search'
+2026-04-03 04:11:21,144 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-03 04:11:21,918 | ERROR    | root | Google Gemini API error: 429 - You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash
+Please retry in 36.531928248s.
+2026-04-03 04:11:21,941 | INFO     | root | Gemini: Successfully validated tool 'exa_academic_search'
+2026-04-03 04:11:21,947 | INFO     | root | Gemini: Successfully validated tool 'tavily_academic_search'
+2026-04-03 04:11:22,422 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-03 04:11:22,424 | ERROR    | root | Google Gemini API error: 429 - You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash
+Please retry in 35.225833798s.
+2026-04-03 04:11:22,446 | INFO     | root | Gemini: Successfully validated tool 'exa_academic_search'
+2026-04-03 04:11:22,448 | INFO     | root | Gemini: Successfully validated tool 'tavily_academic_search'
+2026-04-03 04:11:22,970 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-03 04:11:22,972 | ERROR    | root | Google Gemini API error: 429 - You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash
+Please retry in 34.726725406s.
+2026-04-03 04:14:37,347 | INFO     | research_crew.main | ======================================================================
+2026-04-03 04:14:37,347 | INFO     | research_crew.main | Starting research pipeline for topic: achari is in the food vertical, generating 1k_10k targeting: 1. The "Taste of Home" Seekers
+This is often the largest segment for traditional, handmade, or regional pickle brands.
+
+Demographics: Students living in hostels, young working professionals (22–35) living away from their hometowns, and the Indian diaspora abroad.
+
+Pain Point: Bland mess food or the inability to recreate grandmother’s recipes.
+
+What they want: Authentic, regional flavors (e.g., Avakaya from Andhra, Bedmi from UP, or North Indian Mango pickle) that taste "homemade" rather than factory-produced.
+
+2. The Time-Starved "Meal Enhancers"
+People who cook basic meals but want an instant flavor upgrade.
+
+Demographics: Dual-income households, busy parents (30–50), and bachelors.
+
+Pain Point: Lack of time to cook elaborate side dishes or chutneys.
+
+What they want: Consistency and convenience. They look for versatile pickles that pair well with anything from parathas to dal-chawal or even sandwiches.
+
+3. The Health-Conscious & Clean-Label Consumers
+A rapidly growing niche looking for "guilt-free" indulgence.
+
+Demographics: Fitness enthusiasts and health-aware families.
+
+Pain Point: High sodium, low-quality oils (palm oil), and artificial preservatives in mass-market brands.
+
+What they want: Pickles made with cold-pressed oils (mustard or sesame), rock salt (Saindhav), no added sugar, and zero synthetic preservatives. Sun-dried options are a huge plus.
+
+4. The Gourmet & Adventurous Foodies
+Consumers looking for unique culinary experiences.
+
+Demographics: Urban foodies (25–45) who shop at premium grocery stores or organic markets.
+
+Pain Point: Boredom with the standard "Mango/Lime/Chilli" trio.
+
+What they want: Exotic or non-traditional variants. Think Meat Pickles (Prawn/Chicken), Garlic-Stuffed Chillies, Bamboo Shoot, or even fusion flavors like Cranberry or Jalapeño pickles.
+
+Target Audience Summary Table
+Segment	Core Motivation	Key Purchase Driver
+Nostalgic	Emotional connection	"Maa ke haath ka swaad" (Handmade feel)
+Convenience	Easy meal prep	Price, availability, and sturdy packaging
+Wellness	Health and safety	Natural ingredients, "Oil-free" or "Low-salt"
+Gourmet	Social status/Curiosity	Premium packaging, unique/rare ingredients
+Pro-Tip for Branding:
+If you are targeting Gen Z and Millennials, focus on smaller "trial" packs and aesthetic packaging. If you are targeting Traditional Households, focus on bulk jars (1kg+) and the purity of the spices used..
+2026-04-03 04:14:37,347 | INFO     | research_crew.main | ======================================================================
+2026-04-03 04:14:37,347 | INFO     | research_crew.main | Using LLM: gemini/gemini-2.5-flash  temperature=0.3
+2026-04-03 04:14:39,630 | INFO     | research_crew.main | [1/5] Initialising Planner Agent …
+2026-04-03 04:14:39,638 | INFO     | research_crew.agents.planner_agent | Initialising Planner Agent.
+2026-04-03 04:14:39,638 | INFO     | research_crew.main | [2/5] Initialising Search Agent …
+2026-04-03 04:14:39,640 | INFO     | research_crew.agents.search_agent | Initialising Search Agent.
+2026-04-03 04:14:39,640 | INFO     | research_crew.main | [3/5] Initialising Validator Agent …
+2026-04-03 04:14:39,643 | INFO     | research_crew.agents.validator_agent | Initialising Source Validator Agent.
+2026-04-03 04:14:39,643 | INFO     | research_crew.main | [4/5] Initialising Extractor Agent …
+2026-04-03 04:14:39,644 | INFO     | research_crew.agents.extractor_agent | Initialising Evidence Extraction Agent.
+2026-04-03 04:14:39,648 | INFO     | research_crew.main | [5/5] Initialising Synthesizer Agent …
+2026-04-03 04:14:39,648 | INFO     | research_crew.agents.synthesizer_agent | Initialising Research Synthesizer Agent.
+2026-04-03 04:14:39,648 | INFO     | research_crew.main | Building task pipeline …
+2026-04-03 04:14:39,663 | INFO     | research_crew.main | Kicking off CrewAI pipeline …
+2026-04-03 04:14:39,750 | INFO     | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-04-03 04:14:51,470 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-04-03 04:14:51,555 | INFO     | root | Gemini: Successfully validated tool 'exa_academic_search'
+2026-04-03 04:14:51,556 | INFO     | root | Gemini: Successfully validated tool 'tavily_academic_search'
+2026-04-03 04:14:55,559 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-04-03 04:14:57,693 | INFO     | research_crew.tools.search_tool | Exa returned 8 usable results for query: Indian pickle market consumer segmentation preferences regional authenticity
+2026-04-03 04:14:57,703 | INFO     | root | Gemini: Successfully validated tool 'exa_academic_search'
+2026-04-03 04:14:57,705 | INFO     | root | Gemini: Successfully validated tool 'tavily_academic_search'
+2026-04-03 04:14:59,010 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-04-03 04:15:00,954 | INFO     | research_crew.tools.search_tool | Exa returned 8 usable results for query: Clean label preservation methods low sodium Indian pickles cold pressed oil
+2026-04-03 04:16:00,975 | INFO     | root | Gemini: Successfully validated tool 'exa_academic_search'
+2026-04-03 04:16:00,977 | INFO     | root | Gemini: Successfully validated tool 'tavily_academic_search'
+2026-04-03 04:16:04,474 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-04-03 04:16:06,261 | INFO     | research_crew.tools.search_tool | Exa returned 8 usable results for query: Novel flavor development ethnic food products gourmet Indian pickles
+2026-04-03 04:16:06,278 | INFO     | root | Gemini: Successfully validated tool 'exa_academic_search'
+2026-04-03 04:16:06,283 | INFO     | root | Gemini: Successfully validated tool 'tavily_academic_search'
+2026-04-03 04:16:09,701 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-04-03 04:16:11,950 | INFO     | research_crew.tools.search_tool | Exa returned 8 usable results for query: Food packaging design consumer perception ethnic snacks India Gen Z millennials
+2026-04-03 04:16:11,979 | INFO     | root | Gemini: Successfully validated tool 'exa_academic_search'
+2026-04-03 04:16:11,981 | INFO     | root | Gemini: Successfully validated tool 'tavily_academic_search'
+2026-04-03 04:16:15,490 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-04-03 04:16:17,373 | INFO     | research_crew.tools.search_tool | Exa returned 7 usable results for query: Supply chain management quality control traditional Indian food products artisanal
+2026-04-03 04:16:17,396 | INFO     | root | Gemini: Successfully validated tool 'exa_academic_search'
+2026-04-03 04:16:17,398 | INFO     | root | Gemini: Successfully validated tool 'tavily_academic_search'
+2026-04-03 04:16:51,895 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-04-03 04:17:52,038 | INFO     | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-04-03 04:18:34,497 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-04-03 04:18:34,599 | INFO     | root | Gemini: Successfully validated tool 'pdf_text_extractor'
+2026-04-03 04:18:34,606 | INFO     | root | Gemini: Successfully validated tool 'webpage_text_parser'
+2026-04-03 04:18:43,298 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-04-03 04:18:43,305 | INFO     | research_crew.tools.web_parser | Fetching webpage: https://pubmed.ncbi.nlm.nih.gov/40245625/
+2026-04-03 04:18:44,148 | INFO     | research_crew.tools.web_parser | Webpage parsed: 1983 chars from https://pubmed.ncbi.nlm.nih.gov/40245625/
+2026-04-03 04:18:44,171 | INFO     | root | Gemini: Successfully validated tool 'pdf_text_extractor'
+2026-04-03 04:18:44,172 | INFO     | root | Gemini: Successfully validated tool 'webpage_text_parser'
+2026-04-03 04:18:45,555 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-04-03 04:18:45,560 | INFO     | research_crew.tools.web_parser | Fetching webpage: https://pubmed.ncbi.nlm.nih.gov/40394122/
+2026-04-03 04:18:46,668 | INFO     | research_crew.tools.web_parser | Webpage parsed: 1864 chars from https://pubmed.ncbi.nlm.nih.gov/40394122/
+2026-04-03 04:18:46,680 | INFO     | root | Gemini: Successfully validated tool 'pdf_text_extractor'
+2026-04-03 04:18:46,682 | INFO     | root | Gemini: Successfully validated tool 'webpage_text_parser'
+2026-04-03 04:18:48,053 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-04-03 04:18:48,056 | INFO     | research_crew.tools.web_parser | Fetching webpage: https://pubmed.ncbi.nlm.nih.gov/40647108/
+2026-04-03 04:18:49,047 | INFO     | research_crew.tools.web_parser | Webpage parsed: 1120 chars from https://pubmed.ncbi.nlm.nih.gov/40647108/
+2026-04-03 04:19:49,057 | INFO     | root | Gemini: Successfully validated tool 'pdf_text_extractor'
+2026-04-03 04:19:49,061 | INFO     | root | Gemini: Successfully validated tool 'webpage_text_parser'
+2026-04-03 04:19:52,721 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-04-03 04:19:52,728 | INFO     | research_crew.tools.web_parser | Fetching webpage: https://pubmed.ncbi.nlm.nih.gov/37959030/
+2026-04-03 04:19:53,594 | INFO     | research_crew.tools.web_parser | Webpage parsed: 1535 chars from https://pubmed.ncbi.nlm.nih.gov/37959030/
+2026-04-03 04:19:53,599 | INFO     | root | Gemini: Successfully validated tool 'pdf_text_extractor'
+2026-04-03 04:19:53,605 | INFO     | root | Gemini: Successfully validated tool 'webpage_text_parser'
+2026-04-03 04:20:00,398 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-04-03 04:20:00,406 | INFO     | research_crew.tools.web_parser | Fetching webpage: https://pubmed.ncbi.nlm.nih.gov/37803804/
+2026-04-03 04:20:01,156 | INFO     | research_crew.tools.web_parser | Webpage parsed: 2288 chars from https://pubmed.ncbi.nlm.nih.gov/37803804/
+2026-04-03 04:20:01,169 | INFO     | root | Gemini: Successfully validated tool 'pdf_text_extractor'
+2026-04-03 04:20:01,177 | INFO     | root | Gemini: Successfully validated tool 'webpage_text_parser'
+2026-04-03 04:20:18,771 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-04-03 04:20:19,551 | INFO     | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-04-03 04:20:37,961 | INFO     | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-04-03 04:20:38,105 | INFO     | research_crew.main | Pipeline completed in 360.8 seconds.

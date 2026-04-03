@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+python-dotenv
+pyautogen
+pydantic
+crewai>=0.28.8
+openai
